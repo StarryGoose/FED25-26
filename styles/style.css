@@ -1,31 +1,114 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+:root{
+    --backgroundgrey:#C6C9D5;
+    --backgroundwhite:white;
+    --blue:#6F9DCB;
+    --green:#859B67;
+    --orange:#E27A00;
+    --pink:#EAB7C7;
+    --yellow:#F7D950;
+    --red:#B92E2E;
 }
 
 
+body {
+ background-color: var(--backgroundgrey);   
+}
 
+/* header {
+  background-color: var(--backgroundwhite);
+  position: fixed;
+  display: flex;
+  top:0;
+  left: 0rem;
+  right:0rem;
+  margin: 3rem;
+  padding: 2rem;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0.15rem;
+  border-bottom: var(--backgroundwhite)
+  
+} */
+header li {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  overflow: hidden;
+}
+header a{
+  font-family: 'limelight';
+  font-size: 2em;
+  transform: scale(1,2);
 
+}
 
+header {
+  display:flex;
+  background-color: var(--backgroundwhite);
+  position: relative;
+  top: 0;
+  left: 0rem;
+  right: 0rem;
+  margin: 3rem;
+  padding: 2rem;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0.15rem;
+  border-bottom:var(--backgroundwhite);
+}
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+header nav{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 
+main {
+  display:flex;
+  background-color: var(--backgroundwhite);
+  position: relative;
+  top: -3rem;
+  left: 0rem;
+  right: 0rem;
+  margin: 3rem;
+  padding: 2rem;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0.15rem;
+  border-top: var(--backgroundwhite);
+  height: max-content;
+}
+/* Website using divs to create grids, causing the issue with body header alignment. try using coloms or table to create grid */
+main ul{
+   display: grid;
+   justify-content: space-between;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 3rem;
+    overflow: hidden;
+}
+main  li{
+  text-decoration: none;
+  border: 0.15rem solid #333;
+  padding: 3rem ;
+  background-color: #f9f9f9;
+  width: fit-content;
+  border-radius: 0rem;
+  
+}
 
-
-
-/****************/
-/* JOUW STYLING */
-/****************/
-
-/* jouw code */
-
+footer{
+   display:flex;
+  background-color: var(--backgroundwhite);
+  position: relative;
+  top: -6rem;
+  left: 0rem;
+  right: 0rem;
+  margin: 3rem;
+  padding: 2rem;
+  border-style: solid;
+  border-color: #000;
+  border-width: 0.15rem;
+  border-top: var(--backgroundwhite);
+}
